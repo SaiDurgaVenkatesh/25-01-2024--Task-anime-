@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animee</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        span{
+            color: white;
+           
+        }
+        h1{
+            position: absolute;
+            left: 20%;
+            top: 30%;
+        }
+        h1 span{
+            float: left;
+            list-style-type: none;
+            color: #fff;
+            font-size: 6em;
+            font-weight: bold;
+            letter-spacing: 10px;
+        }
+        h1:hover span{
+            animation: animate 2s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg) translateY(0px);
+                opacity: 1;
+                filter: blur(1px);
+          
+
+            }
+            100%{
+                transform: rotate(45deg) translateY(-200px);
+                opacity: 0;
+                filter: blur(20px);
+            }
+        }
+
+        h1 span:nth-child(1){
+            animation-delay: 0s;
+        }
+        h1 span:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        h1 span:nth-child(3){
+            animation-delay: 0.5s;
+        }
+        h1 span:nth-child(4){
+            animation-delay: 0.7s;
+        }
+        h1 span:nth-child(5){
+            animation-delay: 0.9s;
+        }
+        h1 span:nth-child(6){
+            animation-delay: 1s;
+        }
+        h1 span:nth-child(7){
+            animation-delay: 1.2s;
+        }
+        h1 span:nth-child(8){
+            animation-delay: 1.4s;
+        }
+        h1 span:nth-child(9){
+            animation-delay: 1.5s;
+        }
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            span{
+                width: 100%;
+                position: relative;
+                top: -100px;
+                left: 50px;
+                /* font-size: 10px; */
+            }
+
+            h1 span{
+                margin-left: 50px;
+
+           
+        }
+
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            span{
+                width: 30px;
+                position: relative;
+                top: -60px;
+                left: -90px;
+
+                /* gap: 20px; */
+            }
+
+            h1 span{
+                margin-left: 50px;
+
+           
+        }
+
+        }
+
+      
+            
+        
+    
+      
+      
+    </style>
+</head>
+<body>
+    <section>
+        <h1>
+            <span>V</span>
+            <span>E</span>
+            <span>N</span>
+            <span>K</span>
+            <span>A</span>
+            <span>T</span>
+            <span>E</span>
+            <span>S</span>
+            <span>H</span>
+        </h1>
+    </section>
+   
+</body>
+</html>
